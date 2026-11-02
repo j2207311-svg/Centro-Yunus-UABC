@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Yunus UABC | Información Oficial y Programas Practicantes</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        uabc: {
+                            green: '#00723F',
+                            darkgreen: '#005830',
+                            gold: '#C69214',
+                            lightgold: '#F4E8C1'
+                        },
+                        yunus: {
+                            blue: '#1D70B8',
+                            darkblue: '#15548B',
+                            lightblue: '#EBF4FB',
+                            green: '#00A859'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Metal Plaque Texture Effect */
+        .plaque-bg {
+            background: linear-gradient(135deg, #4a3e35 0%, #2b231d 50%, #1e1814 100%);
+            border: 4px solid #8c7355;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3), inset 0 0 15px rgba(255,255,255,0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+    <!-- TOP INSTITUTIONAL HEADER -->
+    <header class="bg-uabc-green text-white sticky top-0 z-40 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Left: UABC + FEyRI Brand -->
+                <div class="flex items-center gap-3 sm:gap-4">
+                    <div class="bg-white p-1.5 rounded-lg shadow-sm flex items-center justify-center">
+                        <div class="w-10 h-10 bg-uabc-green text-white font-bold rounded flex items-center justify-center text-xs text-center border-2 border-uabc-gold leading-none">
+                            UABC
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#" class="block text-[10px] sm:text-xs uppercase tracking-wider text-uabc-gold font-semibold">Universidad Autónoma de Baja California</a>
+                        <a href="#" class="block font-bold text-sm sm:text-lg leading-tight hover:text-slate-200 transition">
+                            Facultad de Economía y Relaciones Internacionales
+                        </a>
+                        <span class="text-xs text-emerald-100 font-medium block">UABC - Yunus Centre for Social Business and Wellbeing</span>
+                    </div>
+                </div>
+
+                <!-- Right: Nav Links -->
+                <nav class="hidden md:flex items-center space-x-1 lg:space-x-3 text-sm font-medium">
+                    <a href="#inicio" class="px-3 py-2 rounded-md bg-uabc-darkgreen text-white font-semibold">Inicio</a>
+                    <a href="#historia" class="px-3 py-2 rounded-md hover:bg-uabc-darkgreen transition">Historia y Placa</a>
+                    <a href="#mision" class="px-3 py-2 rounded-md hover:bg-uabc-darkgreen transition">Objetivo</a>
+                    <a href="#programas" class="px-3 py-2 rounded-md bg-uabc-gold text-slate-900 font-bold hover:bg-yellow-500 transition">
+                        <i class="fas fa-user-graduate mr-1"></i> Programas SSC/SSP/PP
+                    </a>
+                    <a href="#contacto" class="px-3 py-2 rounded-md hover:bg-uabc-darkgreen transition">Contacto</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex items-center md:hidden">
+                    <button id="mobile-menu-btn" class="p-2 rounded-md text-emerald-100 hover:text-white hover:bg-uabc-darkgreen focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-uabc-darkgreen border-t border-emerald-700 px-4 pt-2 pb-4 space-y-1">
+            <a href="#inicio" class="block px-3 py-2 rounded-md text-base font-medium text-white">Inicio</a>
+            <a href="#historia" class="block px-3 py-2 rounded-md text-base font-medium text-emerald-100">Historia y Placa</a>
+            <a href="#mision" class="block px-3 py-2 rounded-md text-base font-medium text-emerald-100">Objetivo del Centro</a>
+            <a href="#programas" class="block px-3 py-2 rounded-md text-base font-bold text-uabc-gold bg-slate-900">Programas Practicantes (SSC, SSP, PP)</a>
+            <a href="#contacto" class="block px-3 py-2 rounded-md text-base font-medium text-emerald-100">Contacto</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="relative bg-gradient-to-r from-slate-900 via-emerald-950 to-slate-900 text-white py-16 lg:py-20 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#C69214_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/20 border border-emerald-400/30 text-emerald-300 text-xs sm:text-sm font-semibold">
+                        <i class="fas fa-university"></i> FEyRI Tijuana · Campus Otay
+                    </div>
+                    
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
+                        <span class="text-emerald-400">UABC YUNUS</span> <span class="text-yunus-blue">CENTRE</span>
+                    </h1>
+                    <p class="text-base sm:text-lg text-slate-300 font-light max-w-2xl mx-auto lg:mx-0">
+                        Portal de información institucional y consulta oficial de vacantes para <strong>Servicio Social Comunitario (SSC)</strong>, <strong>Servicio Social Profesional (SSP)</strong> y <strong>Prácticas Profesionales (PP)</strong>.
+                    </p>
+
+                    <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#programas" class="w-full sm:w-auto px-6 py-3.5 bg-uabc-gold hover:bg-yellow-600 text-slate-900 font-bold rounded-xl shadow-lg transition flex items-center justify-center gap-2">
+                            <i class="fas fa-search"></i> Consultar Vacantes y Programas
+                        </a>
+                        <a href="#historia" class="w-full sm:w-auto px-6 py-3.5 bg-slate-800 hover:bg-slate-700 text-white font-semibold rounded-xl border border-slate-700 transition flex items-center justify-center gap-2">
+                            <i class="fas fa-landmark"></i> Reseña e Historia
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mascot & Visual Badge -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="w-full max-w-sm bg-white p-6 rounded-2xl shadow-2xl text-slate-900 border border-slate-100 text-center space-y-4">
+                        <!-- Typography Representation -->
+                        <div class="space-y-1">
+                            <div class="text-3xl font-black text-emerald-600">UABC</div>
+                            <div class="text-3xl font-black text-yunus-blue">YUNUS</div>
+                            <div class="text-lg font-light tracking-widest text-slate-600">CENTRE</div>
+                            <div class="text-[10px] font-semibold text-slate-400 uppercase tracking-wider">for Social Business and Wellbeing</div>
+                        </div>
+
+                        <!-- Mascot Card -->
+                        <div class="bg-amber-50 p-4 rounded-xl border border-amber-200 flex items-center gap-3 text-left">
+                            <div class="w-12 h-12 bg-uabc-gold text-slate-900 rounded-full flex items-center justify-center text-xl font-bold flex-shrink-0 shadow-inner">
+                                <i class="fas fa-bee text-amber-900"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xs text-amber-900 uppercase">Mascota Institucional</h4>
+                                <p class="text-xs text-amber-800">Cimarrón-Abeja Yunus: Emprendimiento solidario y trabajo en equipo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- HISTORICAL PLAQUE & RESEÑA SECTION -->
+    <section id="historia" class="py-16 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-xs font-extrabold uppercase tracking-widest text-uabc-green mb-1">Fundación e Identidad</h2>
+                <h3 class="text-3xl font-bold text-slate-900">Placa Inaugural e Historia</h3>
+                <div class="w-16 h-1 bg-uabc-gold mx-auto mt-2 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                
+                <!-- Plaque Visual Component -->
+                <div class="lg:col-span-6">
+                    <div class="plaque-bg p-6 sm:p-8 rounded-xl text-amber-100 relative shadow-2xl">
+                        <div class="absolute top-3 left-3 w-3 h-3 rounded-full bg-amber-700/80 border border-amber-900"></div>
+                        <div class="absolute top-3 right-3 w-3 h-3 rounded-full bg-amber-700/80 border border-amber-900"></div>
+                        <div class="absolute bottom-3 left-3 w-3 h-3 rounded-full bg-amber-700/80 border border-amber-900"></div>
+                        <div class="absolute bottom-3 right-3 w-3 h-3 rounded-full bg-amber-700/80 border border-amber-900"></div>
+
+                        <div class="text-center border border-amber-600/40 p-6 rounded-lg bg-black/20">
+                            <div class="text-xs sm:text-sm tracking-wider uppercase font-semibold text-amber-200">Universidad Autónoma de Baja California</div>
+                            <div class="text-xs sm:text-sm tracking-wide text-amber-300 font-medium">Facultad de Economía y Relaciones Internacionales</div>
+                            
+                            <h4 class="text-xl sm:text-2xl font-bold mt-4 text-white tracking-wide">UABC-Yunus Centre</h4>
+                            <p class="text-xs italic text-amber-200 mb-4">for Social Business and Wellbeing</p>
+                            
+                            <p class="text-xs sm:text-sm text-slate-200 text-justify leading-relaxed mb-6 font-light">
+                                "Espacio dedicado a la generación y aplicación de conocimientos, para atender negocios sociales que resuelvan problemas de pobreza, educación, medio ambiente, salud y bienestar de la sociedad, a través de actividades emprendedoras y solidarias que ayuden a mejorar la calidad de vida de la población con mayores rezagos y carencias económicas y sociales."
+                            </p>
+
+                            <div class="border-t border-amber-600/40 pt-4 text-xs space-y-1">
+                                <p class="font-bold text-amber-300">Inaugurado por el Dr. Muhammad Yunus</p>
+                                <p class="text-amber-200/80">Premio Nobel de la Paz 2006</p>
+                                <p class="text-[11px] text-amber-400/70 pt-2">Durante la gestión Rectoral del Dr. Juan Manuel Ocegueda Hernández</p>
+                                <p class="text-[11px] italic text-amber-200/90 pt-1">"Por la Realización Plena del Hombre"</p>
+                                <p class="text-[10px] text-slate-400 pt-2">Tijuana, Baja California. 11 de octubre de 2018.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Breakdown -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-uabc-green">
+                        <h4 class="font-bold text-lg text-slate-900 mb-1">Origen del Centro Yunus</h4>
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                            Fundado el <strong>11 de octubre de 2018</strong> en la Facultad de Economía y Relaciones Internacionales (FEyRI) Campus Otay Tijuana, el Centro Yunus UABC forma parte de una red global inspirada en la visión del <strong>Dr. Muhammad Yunus</strong>, galardonado con el Premio Nobel de la Paz en 2006.
+                        </p>
+                    </div>
+
+                    <div id="mision" class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-yunus-blue">
+                        <h4 class="font-bold text-lg text-slate-900 mb-1">Misión y Filosofía</h4>
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                            Fomentar modelos de <strong>negocio social</strong> autofinanciables, diseñados específicamente para resolver problemáticas de pobreza, salud, educación y medio ambiente en la región de Baja California sin fines de lucro individual.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-emerald-50 p-4 rounded-lg">
+                            <span class="block font-bold text-uabc-green text-lg">Tijuana, B.C.</span>
+                            <span class="text-xs text-slate-600">Sede FEyRI UABC Otay</span>
+                        </div>
+                        <div class="bg-sky-50 p-4 rounded-lg">
+                            <span class="block font-bold text-yunus-blue text-lg">Red Global</span>
+                            <span class="text-xs text-slate-600">Social Business Centre</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SEARCH & PROGRAM DIRECTORY SECTION (SSC, SSP, PP) -->
+    <section id="programas" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <span class="bg-uabc-lightgold text-amber-900 text-xs px-3 py-1 rounded-full font-bold uppercase tracking-wider">Directorio de Oportunidades</span>
+                <h3 class="text-3xl font-bold text-slate-900 mt-2">Programas para Practicantes y Servicio Social</h3>
+                <p class="text-slate-600 text-xs sm:text-sm mt-2">
+                    Consulta las plazas habilitadas en el Centro Yunus para Servicio Social Comunitario (SSC), Servicio Social Profesional (SSP) y Prácticas Profesionales (PP).
+                </p>
+            </div>
+
+            <!-- Controls: Search + Tabs -->
+            <div class="bg-slate-50 p-4 sm:p-6 rounded-2xl border border-slate-200 mb-8 space-y-4">
+                
+                <!-- Search Input Bar -->
+                <div class="relative">
+                    <i class="fas fa-search absolute left-4 top-3.5 text-slate-400"></i>
+                    <input type="text" id="program-search" oninput="filterPrograms()" placeholder="Buscar por licenciatura (ej. Economía, Derecho), campus, ID o facultad..." class="w-full pl-11 pr-4 py-3 bg-white border border-slate-300 rounded-xl text-xs sm:text-sm focus:ring-2 focus:ring-uabc-green focus:outline-none shadow-sm">
+                </div>
+
+                <!-- Tabs for Program Type -->
+                <div class="flex flex-wrap gap-2 pt-2 border-t border-slate-200">
+                    <button onclick="setTab('ALL')" id="tab-ALL" class="tab-btn px-4 py-2 text-xs font-bold rounded-lg bg-uabc-green text-white shadow-sm">
+                        Todos los Programas (<span id="count-ALL">0</span>)
+                    </button>
+                    <button onclick="setTab('SSC')" id="tab-SSC" class="tab-btn px-4 py-2 text-xs font-bold rounded-lg bg-white border border-slate-300 text-slate-700 hover:bg-slate-100">
+                        Servicio Social Comunitario - SSC (<span id="count-SSC">0</span>)
+                    </button>
+                    <button onclick="setTab('SSP')" id="tab-SSP" class="tab-btn px-4 py-2 text-xs font-bold rounded-lg bg-white border border-slate-300 text-slate-700 hover:bg-slate-100">
+                        Servicio Social Profesional - SSP (<span id="count-SSP">0</span>)
+                    </button>
+                    <button onclick="setTab('PP')" id="tab-PP" class="tab-btn px-4 py-2 text-xs font-bold rounded-lg bg-white border border-slate-300 text-slate-700 hover:bg-slate-100">
+                        Prácticas Profesionales - PP (<span id="count-PP">0</span>)
+                    </button>
+                </div>
+            </div>
+
+            <!-- Results Cards / Table Container -->
+            <div id="program-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- JS dynamic injection will populate this area -->
+            </div>
+
+            <!-- Empty State -->
+            <div id="no-results" class="hidden text-center py-12 text-slate-500">
+                <i class="fas fa-search-minus text-4xl mb-3 text-slate-300"></i>
+                <p class="text-sm font-semibold">No se encontraron programas con los criterios de búsqueda.</p>
+                <p class="text-xs text-slate-400 mt-1">Intenta buscando por otro nombre de carrera o seleccionando otra pestaña.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER / CONTACT SECTION -->
+    <footer id="contacto" class="bg-slate-900 text-slate-300 pt-16 pb-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-12 border-b border-slate-800">
+                
+                <!-- Col 1: Brand Info -->
+                <div class="md:col-span-5 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-uabc-green text-white font-bold rounded flex items-center justify-center text-xs border border-uabc-gold">
+                            UABC
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white text-base leading-tight">Centro Yunus UABC</h4>
+                            <p class="text-xs text-slate-400">Facultad de Economía y Relaciones Internacionales</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed pr-4">
+                        Espacio universitario dedicado a la investigación y desarrollo de negocios sociales, vinculando practicantes y prestadores de servicio social para el bienestar de la sociedad.
+                    </p>
+                    <div class="flex space-x-3 text-lg text-slate-400 pt-2">
+                        <a href="https://facebook.com" target="_blank" rel="noopener" class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-uabc-green hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener" class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-yunus-blue hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener" class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-sky-600 hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Institutional Links -->
+                <div class="md:col-span-3 space-y-3">
+                    <h5 class="text-sm font-bold text-white uppercase tracking-wider">Enlaces Institucionales</h5>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="http://feyri.mx" target="_blank" rel="noopener" class="hover:text-uabc-gold transition"><i class="fas fa-external-link-alt mr-1 text-[10px]"></i> Portal FEyRI UABC</a></li>
+                        <li><a href="https://www.uabc.mx" target="_blank" rel="noopener" class="hover:text-uabc-gold transition"><i class="fas fa-external-link-alt mr-1 text-[10px]"></i> Sitio General UABC</a></li>
+                        <li><a href="#historia" class="hover:text-uabc-gold transition">Reseña e Historia</a></li>
+                        <li><a href="#programas" class="hover:text-uabc-gold transition">Directorio de Servicio Social</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Contact Details -->
+                <div class="md:col-span-4 space-y-3">
+                    <h5 class="text-sm font-bold text-white uppercase tracking-wider">Ubicación y Contacto</h5>
+                    <ul class="space-y-2.5 text-xs text-slate-400">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-map-marker-alt text-uabc-gold mt-0.5"></i>
+                            <span>Calzada Universidad 14418, Parque Industrial Internacional Tijuana, C.P. 22427, Tijuana, B.C.</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-building text-uabc-gold"></i>
+                            <span>Edificio FEyRI, Planta Baja · Campus Otay</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-envelope text-uabc-gold"></i>
+                            <span>ss.feyri@uabc.edu.mx</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+                <p>© 2026 Universidad Autónoma de Baja California - Facultad de Economía y Relaciones Internacionales.</p>
+                <p class="mt-2 sm:mt-0">UABC Yunus Centre for Social Business and Wellbeing.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT & DATA HANDLING -->
+    <script>
+        // Data Structure with all user provided entries
+        const programData = [
+            // --- SERVICIO SOCIAL COMUNITARIO (SSC) ---
+            {
+                type: 'SSC',
+                programName: 'Acompañamiento Solidario al Sector Microempresarial de Baja California',
+                id: 'A10-0003',
+                carrera: 'Lic. en Administración Pública y Ciencias Políticas',
+                campus: 'Tijuana',
+                facultad: 'Facultad de Economía y Relaciones Internacionales (FEyRI)',
+                responsable: 'Cristina Sánchez',
+                correo: 'ss.feyri@uabc.edu.mx',
+                info: 'Atención y tutoría a microempresas locales.'
+            },
+            {
+                type: 'SSC',
+                programName: 'Acompañamiento Solidario al Sector Microempresarial de Baja California',
+                id: 'A10-0003',
+                carrera: 'Lic. en Economía',
+                campus: 'Tijuana',
+                facultad: 'Facultad de Economía y Relaciones Internacionales (FEyRI)',
+                responsable: 'Cristina Sánchez',
+                correo: 'ss.feyri@uabc.edu.mx',
+                info: 'Atención y tutoría a microempresas locales.'
+            },
+            {
+                type: 'SSC',
+                programName: 'Acompañamiento Solidario al Sector Microempresarial de Baja California',
+                id: 'A10-0003',
+                carrera: 'Lic. en Relaciones Internacionales',
+                campus: 'Tijuana',
+                facultad: 'Facultad de Economía y Relaciones Internacionales (FEyRI)',
+                responsable: 'Cristina Sánchez',
+                correo: 'ss.feyri@uabc.edu.mx',
+                info: 'Atención y tutoría a microempresas locales.'
+            },
+            {
+                type: 'SSC',
+                programName: 'Acompañamiento Solidario al Sector Microempresarial de Baja California',
+                id: 'A10-0003',
+                carrera: 'Lic. en Asesoría Psicopedagógica',
+                campus: 'Tijuana',
+                facultad: 'Facultad de Humanidades y Ciencias Sociales (FHyCS)',
+                responsable: 'Mtra. Claudia Ivet Becerra Lugo',
+                correo: 'ssc.fhycstij@uabc.edu.mx',
+                info: 'Apoyo psicoeducativo en negocios sociales.'
+            },
+            {
+                type: 'SSC',
+                programName: 'Acompañamiento Solidario al Sector Microempresarial de Baja California',
+                id: 'A10-0003',
+                carrera: 'Lic. en Ciencias de la Comunicación',
+                campus: 'Tijuana',
+                facultad: 'Facultad de Humanidades y Ciencias Sociales (FHyCS)',
+                responsable: 'Mtra. Claudia Ivet Becerra Lugo',
+                correo: 'ssc.fhycstij@uabc.edu.mx',
+                info: 'Estrategias de comunicación para microempresas.'
+            },
+            {
+                type: 'SSC',
+                programName: 'Acompañamiento Solidario al Sector Microempresarial de Baja California',
+                id: 'A10-0003',
+                carrera: 'Lic. en Docencia de la Lengua y la Literatura',
+                campus: 'Tijuana',
+                facultad: 'Facultad de Humanidades y Ciencias Sociales (FHyCS)',
+                responsable: 'Mtra. Claudia Ivet Becerra Lugo',
+                correo: 'ssc.fhycstij@uabc.edu.mx',
+                info: 'Capacitación y talleres comunitarios.'
+            },
+            {
+                type: 'SSC',
+                programName: 'Acompañamiento Solidario al Sector Microempresarial de Baja California',
+                id: 'A10-0003',
+                carrera: 'Lic. en Docencia de la Matemática',
+                campus: 'Tijuana',
+                facultad: 'Facultad de Humanidades y Ciencias Sociales (FHyCS)',
+                responsable: 'Mtra. Claudia Ivet Becerra Lugo',
+                correo: 'ssc.fhycstij@uabc.edu.mx',
+                info: 'Asesoría en finanzas básicas comunitarias.'
+            },
+            {
+                type: 'SSC',
+                programName: 'Acompañamiento Solidario al Sector Microempresarial de Baja California',
+                id: 'A10-0003',
+                carrera: 'Lic. en Filosofía',
+                campus: 'Tijuana',
+                facultad: 'Facultad de Humanidades y Ciencias Sociales (FHyCS)',
+                responsable: 'Mtra. Claudia Ivet Becerra Lugo',
+                correo: 'ssc.fhycstij@uabc.edu.mx',
+                info: 'Ética y responsabilidad social.'
+            },
+            {
+                type: 'SSC',
+                programName: 'Acompañamiento Solidario al Sector Microempresarial de Baja California',
+                id: 'A10-0003',
+                carrera: 'Lic. en Historia',
+                campus: 'Tijuana',
+                facultad: 'Facultad de Humanidades y Ciencias Sociales (FHyCS)',
+                responsable: 'Mtra. Claudia Ivet Becerra Lugo',
+                correo: 'ssc.fhycstij@uabc.edu.mx',
+                info: 'Investigación histórica de economía regional.'
+            },
+            {
+                type: 'SSC',
+                programName: 'Acompañamiento Solidario al Sector Microempresarial de Baja California',
+                id: 'A10-0003',
+                carrera: 'Lic. en Lengua y Literatura de Hispanoamérica',
+                campus: 'Tijuana',
+                facultad: 'Facultad de Humanidades y Ciencias Sociales (FHyCS)',
+                responsable: 'Mtra. Claudia Ivet Becerra Lugo',
+                correo: 'ssc.fhycstij@uabc.edu.mx',
+                info: 'Redacción y documentación de proyectos.'
+            },
+            {
+                type: 'SSC',
+                programName: 'Acompañamiento Solidario al Sector Microempresarial de Baja California',
+                id: 'A10-0003',
+                carrera: 'Lic. en Sociología',
+                campus: 'Tijuana',
+                facultad: 'Facultad de Humanidades y Ciencias Sociales (FHyCS)',
+                responsable: 'Mtra. Claudia Ivet Becerra Lugo',
+                correo: 'ssc.fhycstij@uabc.edu.mx',
+                info: 'Diagnóstico social comunitario.'
+            },
+
+            // --- SERVICIO SOCIAL PROFESIONAL (SSP) ---
+            {
+                type: 'SSP',
+                programName: 'Programa de Investigación, Asistencia y Docencia a la Micro y Pequeña Empresa',
+                id: 'U10-0015',
+                carrera: 'Lic. en Derecho',
+                campus: 'Tijuana',
+                facultad: 'Facultad de Derecho',
+                responsable: 'N/A',
+                correo: 'ssprofesional.dertij@uabc.edu.mx',
+                info: 'Asesoría jurídica y legal para PYMES.'
+            },
+            {
+                type: 'SSP',
+                programName: 'Programa de Investigación, Asistencia y Docencia a la Micro y Pequeña Empresa',
+                id: 'U10-0015',
+                carrera: 'Lic. en Economía',
+                campus: 'Tijuana',
+                facultad: 'Facultad de Economía y Relaciones Internacionales (FEyRI)',
+                responsable: 'Cristina Sánchez',
+                correo: 'ss.feyri@uabc.edu.mx',
+                info: 'Análisis microeconómico e investigación.'
+            },
+            {
+                type: 'SSP',
+                programName: 'Programa de Investigación, Asistencia y Docencia a la Micro y Pequeña Empresa',
+                id: 'U10-0015',
+                carrera: 'Lic. en Relaciones Internacionales',
+                campus: 'Tijuana',
+                facultad: 'Facultad de Economía y Relaciones Internacionales (FEyRI)',
+                responsable: 'Cristina Sánchez',
+                correo: 'ss.feyri@uabc.edu.mx',
+                info: 'Comercio exterior e integración regional.'
+            },
+            {
+                type: 'SSP',
+                programName: 'Programa de Investigación, Asistencia y Docencia a la Micro y Pequeña Empresa',
+                id: 'U10-0015',
+                carrera: 'Lic. en Administración Pública y Ciencias Políticas',
+                campus: 'Tijuana',
+                facultad: 'Facultad de Economía y Relaciones Internacionales (FEyRI)',
+                responsable: 'Cristina Sánchez',
+                correo: 'ss.feyri@uabc.edu.mx',
+                info: 'Políticas públicas de fomento a PYMES.'
+            },
+            {
+                type: 'SSP',
+                programName: 'Programa de Investigación, Asistencia y Docencia a la Micro y Pequeña Empresa',
+                id: 'U10-0015',
+                carrera: 'Lic. en Administración Pública y Ciencias Políticas',
+                campus: 'Mexicali',
+                facultad: 'Facultad de Ciencias Sociales y Políticas',
+                responsable: 'Dr. Omar de la Cruz Carrillo',
+                correo: 'ssp.fcsp@uabc.edu.mx',
+                info: 'Gestión pública para negocios sociales.'
+            },
+            {
+                type: 'SSP',
+                programName: 'Programa de Investigación, Asistencia y Docencia a la Micro y Pequeña Empresa',
+                id: 'U10-0015',
+                carrera: 'Lic. en Economía',
+                campus: 'Mexicali',
+                facultad: 'Facultad de Ciencias Sociales y Políticas',
+                responsable: 'Dr. Omar de la Cruz Carrillo',
+                correo: 'ssp.fcsp@uabc.edu.mx',
+                info: 'Proyecciones financieras regionales.'
+            },
+            {
+                type: 'SSP',
+                programName: 'Programa de Investigación, Asistencia y Docencia a la Micro y Pequeña Empresa',
+                id: 'U10-0015',
+                carrera: 'Lic. en Relaciones Internacionales',
+                campus: 'Mexicali',
+                facultad: 'Facultad de Ciencias Sociales y Políticas',
+                responsable: 'Dr. Omar de la Cruz Carrillo',
+                correo: 'ssp.fcsp@uabc.edu.mx',
+                info: 'Proyectos transfronterizos.'
+            },
+            {
+                type: 'SSP',
+                programName: 'Programa de Investigación, Asistencia y Docencia a la Micro y Pequeña Empresa',
+                id: 'U10-0015',
+                carrera: 'Lic. en Artes Plásticas',
+                campus: 'Tijuana',
+                facultad: 'Facultad de Artes',
+                responsable: 'Mtro. José Constantino Hernández',
+                correo: 'ss.artestij@uabc.edu.mx',
+                info: 'Diseño visual e identidad para empresas sociales.'
+            },
+            {
+                type: 'SSP',
+                programName: 'Programa de Investigación, Asistencia y Docencia a la Micro y Pequeña Empresa',
+                id: 'U10-0015',
+                carrera: 'Lic. en Teatro',
+                campus: 'Tijuana',
+                facultad: 'Facultad de Artes',
+                responsable: 'Mtro. José Constantino Hernández',
+                correo: 'ss.artestij@uabc.edu.mx',
+                info: 'Proyectos de divulgación social y cultural.'
+            },
+            {
+                type: 'SSP',
+                programName: 'Programa de Investigación, Asistencia y Docencia a la Micro y Pequeña Empresa',
+                id: 'U10-0015',
+                carrera: 'Lic. en Artes Visuales',
+                campus: 'Tijuana',
+                facultad: 'Facultad de Artes',
+                responsable: 'Mtro. José Constantino Hernández',
+                correo: 'ss.artestij@uabc.edu.mx',
+                info: 'Contenido multimedia e imagen corporativa.'
+            },
+            {
+                type: 'SSP',
+                programName: 'Programa de Investigación, Asistencia y Docencia a la Micro y Pequeña Empresa',
+                id: 'U10-0015',
+                carrera: 'Lic. en Turismo',
+                campus: 'Tijuana',
+                facultad: 'Facultad de Turismo y Mercadotecnia',
+                responsable: 'N/A',
+                correo: 'ssp.ftmtij@uabc.edu.mx',
+                info: 'Turismo comunitario y sostenible.'
+            },
+            {
+                type: 'SSP',
+                programName: 'Programa de Investigación, Asistencia y Docencia a la Micro y Pequeña Empresa',
+                id: 'U10-0015',
+                carrera: 'Lic. en Mercadotecnia',
+                campus: 'Tijuana',
+                facultad: 'Facultad de Turismo y Mercadotecnia',
+                responsable: 'N/A',
+                correo: 'ssp.ftmtij@uabc.edu.mx',
+                info: 'Planes de mercadotecnia con enfoque social.'
+            },
+            {
+                type: 'SSP',
+                programName: 'Programa de Investigación, Asistencia y Docencia a la Micro y Pequeña Empresa',
+                id: 'U10-0015',
+                carrera: 'Lic. en Gestión Turística',
+                campus: 'Tijuana',
+                facultad: 'Facultad de Turismo y Mercadotecnia',
+                responsable: 'N/A',
+                correo: 'ssp.ftmtij@uabc.edu.mx',
+                info: 'Desarrollo de destinos sustentables.'
+            },
+            {
+                type: 'SSP',
+                programName: 'Programa de Investigación, Asistencia y Docencia a la Micro y Pequeña Empresa',
+                id: 'U10-0015',
+                carrera: 'Lic. en Gastronomía',
+                campus: 'Tijuana',
+                facultad: 'Facultad de Turismo y Mercadotecnia',
+                responsable: 'N/A',
+                correo: 'ssp.ftmtij@uabc.edu.mx',
+                info: 'Emprendimiento gastronómico responsable.'
+            },
+            {
+                type: 'SSP',
+                programName: 'Programa de Investigación, Asistencia y Docencia a la Micro y Pequeña Empresa',
+                id: 'U10-0015',
+                carrera: 'Lic. en Asesoría Psicopedagógica',
+                campus: 'Tijuana',
+                facultad: 'Facultad de Humanidades y Ciencias Sociales (FHyCS)',
+                responsable: 'Mtra. Claudia Ivet Becerra Lugo',
+                correo: 'ssp.fhycstij@uabc.edu.mx',
+                info: 'Capacitación profesional de equipos.'
+            },
+
+            // --- PRÁCTICAS PROFESIONALES (PP) ---
+            {
+                type: 'PP',
+                programName: 'Prog. de Investigación, Asistencia y Docencia de la Micro y Pequeña Empresa. Economía',
+                id: '8205',
+                carrera: 'Lic. en Economía',
+                campus: 'Tijuana',
+                facultad: 'Facultad de Economía y Relaciones Internacionales (FEyRI)',
+                responsable: 'Dr. Luciano de la Rosa Gutierrez',
+                correo: 'practicas.feyri@uabc.edu.mx',
+                cupo: 'Cupo: 2 / Espacios: 0'
+            },
+            {
+                type: 'PP',
+                programName: 'Prog. de Investigación, Asistencia y Docencia de la Micro y Pequeña Empresa. Economía (CLON16862)',
+                id: '16862',
+                carrera: 'Lic. en Economía',
+                campus: 'Tijuana',
+                facultad: 'Facultad de Economía y Relaciones Internacionales (FEyRI)',
+                responsable: 'Dr. Luciano de la Rosa Gutierrez',
+                correo: 'practicas.feyri@uabc.edu.mx',
+                cupo: 'Cupo: 2 / Espacios: 0'
+            },
+            {
+                type: 'PP',
+                programName: 'Prog. de Investigación, Asistencia y Docencia de la Micro y Pequeña Empresa. Economía (CLON17908)',
+                id: '17908',
+                carrera: 'Lic. en Economía',
+                campus: 'Tijuana',
+                facultad: 'Facultad de Economía y Relaciones Internacionales (FEyRI)',
+                responsable: 'Dr. Luciano de la Rosa Gutierrez',
+                correo: 'practicas.feyri@uabc.edu.mx',
+                cupo: 'Cupo: 2 / Espacios: 0'
+            },
+            {
+                type: 'PP',
+                programName: 'Prog. de Investigación, Asistencia y Docencia de la Micro y Pequeña Empresa. Relaciones Int.',
+                id: '17911',
+                carrera: 'Lic. en Relaciones Internacionales',
+                campus: 'Tijuana',
+                facultad: 'Facultad de Economía y Relaciones Internacionales (FEyRI)',
+                responsable: 'Dr. Luciano de la Rosa Gutierrez',
+                correo: 'practicas.feyri@uabc.edu.mx',
+                cupo: 'Cupo: 10 / Espacios: 9'
+            },
+            {
+                type: 'PP',
+                programName: 'Prog. de Investigación, Asistencia y Docencia de la Micro y Pequeña Empresa',
+                id: '30160',
+                carrera: 'Lic. en Economía',
+                campus: 'Tijuana',
+                facultad: 'Facultad de Economía y Relaciones Internacionales (FEyRI)',
+                responsable: 'Dr. Luciano de la Rosa Gutierrez',
+                correo: 'practicas.feyri@uabc.edu.mx',
+                cupo: 'Cupo: 5 / Espacios: 5'
+            },
+            {
+                type: 'PP',
+                programName: 'Prog. de Investigación, Asistencia y Docencia de la Micro y Pequeña Empresa (CLON30278)',
+                id: '30278',
+                carrera: 'Lic. en Economía',
+                campus: 'Tijuana',
+                facultad: 'Facultad de Economía y Relaciones Internacionales (FEyRI)',
+                responsable: 'Dr. Luciano de la Rosa Gutierrez',
+                correo: 'practicas.feyri@uabc.edu.mx',
+                cupo: 'Cupo: 5 / Espacios: 3'
+            },
+            {
+                type: 'PP',
+                programName: 'Prog. de Investigación, Asistencia y Docencia de la Micro y Pequeña Empresa (CLON49882)',
+                id: '49882',
+                carrera: 'Lic. en Economía',
+                campus: 'Tijuana',
+                facultad: 'Facultad de Economía y Relaciones Internacionales (FEyRI)',
+                responsable: 'Dr. Luciano de la Rosa Gutierrez',
+                correo: 'practicas.feyri@uabc.edu.mx',
+                cupo: 'Cupo: 2 / Espacios: 2'
+            },
+            {
+                type: 'PP',
+                programName: 'Prog. de Investigación, Asistencia y Docencia de la Micro y Pequeña Empresa (CLON65420)',
+                id: '65420',
+                carrera: 'Lic. en Economía',
+                campus: 'Tijuana',
+                facultad: 'Facultad de Economía y Relaciones Internacionales (FEyRI)',
+                responsable: 'Dr. Luciano de la Rosa Gutierrez',
+                correo: 'practicas.feyri@uabc.edu.mx',
+                cupo: 'Cupo: 2 / Espacios: 0'
+            },
+            {
+                type: 'PP',
+                programName: 'Prog. de Investigación, Asistencia y Docencia de la Micro y Pequeña Empresa (CLON65437)',
+                id: '65437',
+                carrera: 'Lic. en Economía',
+                campus: 'Tijuana',
+                facultad: 'Facultad de Economía y Relaciones Internacionales (FEyRI)',
+                responsable: 'Dr. Luciano de la Rosa Gutierrez',
+                correo: 'practicas.feyri@uabc.edu.mx',
+                cupo: 'Cupo: 2 / Espacios: 2'
+            },
+            {
+                type: 'PP',
+                programName: 'Prog. de Investigación, Asistencia y Docencia de la Micro y Pequeña Empresa (CLON65438)',
+                id: '65438',
+                carrera: 'Lic. en Economía',
+                campus: 'Tijuana',
+                facultad: 'Facultad de Economía y Relaciones Internacionales (FEyRI)',
+                responsable: 'Dr. Luciano de la Rosa Gutierrez',
+                correo: 'practicas.feyri@uabc.edu.mx',
+                cupo: 'Cupo: 2 / Espacios: 2'
+            },
+            {
+                type: 'PP',
+                programName: 'Prog. de Investigación, Asistencia y Docencia de la Micro y Pequeña Empresa (CLON65477)',
+                id: '65477',
+                carrera: 'Lic. en Economía',
+                campus: 'Tijuana',
+                facultad: 'Facultad de Economía y Relaciones Internacionales (FEyRI)',
+                responsable: 'Dr. Luciano de la Rosa Gutierrez',
+                correo: 'practicas.feyri@uabc.edu.mx',
+                cupo: 'Cupo: 10 / Espacios: 10'
+            },
+            {
+                type: 'PP',
+                programName: 'Prog. de Investigación, Asistencia y Docencia de la Micro y Pequeña Empresa. APyCP',
+                id: '74899',
+                carrera: 'Lic. en Administración Pública y Ciencias Políticas',
+                campus: 'Tijuana',
+                facultad: 'Facultad de Economía y Relaciones Internacionales (FEyRI)',
+                responsable: 'Dr. Luciano de la Rosa Gutierrez',
+                correo: 'practicas.feyri@uabc.edu.mx',
+                cupo: 'Consultar en Sistema'
+            },
+            {
+                type: 'PP',
+                programName: 'Prog. de Investigación, Asistencia y Docencia de la Micro y Pequeña Empresa',
+                id: '80505',
+                carrera: 'Lic. en Negocios Internacionales',
+                campus: 'Tijuana',
+                facultad: 'Facultad de Contaduría y Administración (FCA)',
+                responsable: 'Mtro. Ricardo Cortez Sánchez',
+                correo: 'practicas.fcatij@uabc.edu.mx',
+                cupo: 'Consultar en Sistema'
+            },
+            {
+                type: 'PP',
+                programName: 'Prog. de Investigación, Asistencia y Docencia de la Micro y Pequeña Empresa. DGR',
+                id: '80510',
+                carrera: 'Lic. en Diseño Gráfico',
+                campus: 'Valle de las Palmas',
+                facultad: 'Facultad de Ciencias de la Ingeniería y Tecnología (FCITEC)',
+                responsable: 'Dr. Oscar Adrián Morales Contreras',
+                correo: 'practicas.fcitec@uabc.edu.mx',
+                cupo: 'Consultar en Sistema'
+            },
+            {
+                type: 'PP',
+                programName: 'Prog. de Investigación, Asistencia y Docencia de la Micro y Pequeña Empresa_Artes',
+                id: '80624',
+                carrera: 'Lic. en Artes Plásticas',
+                campus: 'Tijuana',
+                facultad: 'Facultad de Artes',
+                responsable: 'N/A',
+                correo: 'practicas.artestij@uabc.edu.mx',
+                cupo: 'Espacios: 0'
+            },
+            {
+                type: 'PP',
+                programName: 'Prog. de Investigación, Asistencia y Docencia_Centro UABC Yunus_Psicología',
+                id: '85897',
+                carrera: 'Lic. en Psicología',
+                campus: 'Valle de las Palmas',
+                facultad: 'Facultad de Ciencias de la Salud (FACISALUD)',
+                responsable: 'Dra. Ana Isabel Brito Sánchez',
+                correo: 'practicas.facisaludvlp@uabc.edu.mx',
+                cupo: 'Consultar en Sistema'
+            },
+            {
+                type: 'PP',
+                programName: 'Prog. de Investigación, Asistencia y Docencia_Centro UABC-Yunus_IST',
+                id: '85898',
+                carrera: 'Ing. en Software y Tecnologías Emergentes',
+                campus: 'Valle de las Palmas',
+                facultad: 'Facultad de Ciencias de la Ingeniería y Tecnología (FCITEC)',
+                responsable: 'Dr. Oscar Adrián Morales Contreras',
+                correo: 'practicas.fcitec@uabc.edu.mx',
+                cupo: 'Consultar en Sistema'
+            },
+            {
+                type: 'PP',
+                programName: 'Prog. de Investigación, Asistencia y Docencia_Centro UABC Yunus_LCC',
+                id: '85899',
+                carrera: 'Lic. en Ciencias de la Comunicación',
+                campus: 'Tijuana',
+                facultad: 'Facultad de Humanidades y Ciencias Sociales (FHyCS)',
+                responsable: 'N/A',
+                correo: 'practicas.fhycstij@uabc.edu.mx',
+                cupo: 'Consultar en Sistema'
+            },
+            {
+                type: 'PP',
+                programName: 'Centro Yunus_DMatemáticas',
+                id: '91119',
+                carrera: 'Lic. en Docencia de la Matemática',
+                campus: 'Tijuana',
+                facultad: 'Facultad de Humanidades y Ciencias Sociales (FHyCS)',
+                responsable: 'N/A',
+                correo: 'practicas.fhycstij@uabc.edu.mx',
+                cupo: 'Consultar en Sistema'
+            },
+            {
+                type: 'PP',
+                programName: 'Centro Yunus_Diseño Industrial',
+                id: '91120',
+                carrera: 'Lic. en Diseño Industrial',
+                campus: 'Valle de las Palmas',
+                facultad: 'Facultad de Ciencias de la Ingeniería y Tecnología (FCITEC)',
+                responsable: 'Dr. Oscar Adrián Morales Contreras',
+                correo: 'practicas.fcitec@uabc.edu.mx',
+                cupo: 'Consultar en Sistema'
+            },
+            {
+                type: 'PP',
+                programName: 'Centro UABC Yunus_Traducción',
+                id: '100993',
+                carrera: 'Lic. en Traducción',
+                campus: 'Tijuana',
+                facultad: 'Facultad de Idiomas',
+                responsable: 'N/A',
+                correo: 'practicas.idiomastij@uabc.edu.mx',
+                cupo: 'Consultar en Sistema'
+            },
+            {
+                type: 'PP',
+                programName: 'Centro UABC Yunus_IST_FCQI',
+                id: '101715',
+                carrera: 'Ing. en Software y Tecnologías Emergentes',
+                campus: 'Tijuana',
+                facultad: 'Facultad de Ciencias Químicas e Ingeniería (FCQI)',
+                responsable: 'N/A',
+                correo: 'practicas.fcqi@uabc.edu.mx',
+                cupo: 'Consultar en Sistema'
+            },
+            {
+                type: 'PP',
+                programName: 'Centro UABC Yunus_Enseñanza de Lenguas',
+                id: '102073',
+                carrera: 'Lic. en Enseñanza de Lenguas',
+                campus: 'Tijuana',
+                facultad: 'Facultad de Idiomas',
+                responsable: 'N/A',
+                correo: 'practicas.idiomastij@uabc.edu.mx',
+                cupo: 'Consultar en Sistema'
+            }
+        ];
+
+        let activeTab = 'ALL';
+
+        // Filter Function
+        function filterPrograms() {
+            const query = document.getElementById('program-search').value.toLowerCase().trim();
+            const container = document.getElementById('program-list');
+            const noResults = document.getElementById('no-results');
+
+            container.innerHTML = '';
+
+            const filtered = programData.filter(item => {
+                const matchesTab = (activeTab === 'ALL') || (item.type === activeTab);
+                const matchesSearch = 
+                    item.carrera.toLowerCase().includes(query) ||
+                    item.facultad.toLowerCase().includes(query) ||
+                    item.campus.toLowerCase().includes(query) ||
+                    item.id.toLowerCase().includes(query) ||
+                    item.correo.toLowerCase().includes(query) ||
+                    item.programName.toLowerCase().includes(query);
+
+                return matchesTab && matchesSearch;
+            });
+
+            if (filtered.length === 0) {
+                noResults.classList.remove('hidden');
+            } else {
+                noResults.classList.add('hidden');
+                filtered.forEach(item => {
+                    container.appendChild(createProgramCard(item));
+                });
+            }
+        }
+
+        // Card HTML Generator
+        function createProgramCard(item) {
+            const card = document.createElement('div');
+            card.className = "bg-white rounded-xl border border-slate-200 p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between space-y-4";
+
+            let badgeBg = "bg-emerald-100 text-emerald-800 border-emerald-300";
+            let badgeText = "Servicio Social Comunitario (SSC)";
+
+            if(item.type === 'SSP') {
+                badgeBg = "bg-sky-100 text-sky-800 border-sky-300";
+                badgeText = "Servicio Social Profesional (SSP)";
+            } else if(item.type === 'PP') {
+                badgeBg = "bg-amber-100 text-amber-900 border-amber-300";
+                badgeText = "Prácticas Profesionales (PP)";
+            }
+
+            card.innerHTML = `
+                <div>
+                    <div class="flex items-center justify-between gap-2 mb-2">
+                        <span class="text-[10px] font-bold px-2.5 py-0.5 rounded-full border ${badgeBg}">
+                            ${badgeText}
+                        </span>
+                        <span class="text-[10px] font-mono bg-slate-100 text-slate-600 px-2 py-0.5 rounded border border-slate-200">
+                            ID: ${item.id}
+                        </span>
+                    </div>
+
+                    <h4 class="font-bold text-slate-900 text-sm leading-snug mb-1">${item.carrera}</h4>
+                    <p class="text-xs text-slate-500 font-medium">${item.facultad}</p>
+                    <p class="text-[11px] text-slate-400 mt-0.5"><i class="fas fa-map-marker-alt text-slate-400 mr-1"></i> Campus ${item.campus}</p>
+                    
+                    <div class="mt-3 pt-3 border-t border-slate-100 space-y-1 text-xs">
+                        <p class="text-slate-700 font-semibold truncate" title="${item.programName}">
+                            <i class="fas fa-project-diagram text-slate-400 mr-1.5"></i> ${item.programName}
+                        </p>
+                        ${item.cupo ? `<p class="text-slate-600 font-medium"><i class="fas fa-users text-slate-400 mr-1.5"></i> ${item.cupo}</p>` : ''}
+                    </div>
+                </div>
+
+                <div class="pt-3 border-t border-slate-100 bg-slate-50 -mx-5 -mb-5 p-4 rounded-b-xl space-y-1.5 text-xs">
+                    <p class="text-slate-700">
+                        <span class="font-bold">Responsable:</span> ${item.responsable}
+                    </p>
+                    <a href="mailto:${item.correo}" class="inline-flex items-center font-bold text-uabc-green hover:underline text-xs break-all">
+                        <i class="fas fa-envelope mr-1.5 text-slate-400"></i> ${item.correo}
+                    </a>
+                </div>
+            `;
+
+            return card;
+        }
+
+        // Set Tab Filter
+        function setTab(tabType) {
+            activeTab = tabType;
+
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.className = "tab-btn px-4 py-2 text-xs font-bold rounded-lg bg-white border border-slate-300 text-slate-700 hover:bg-slate-100";
+            });
+
+            const activeBtn = document.getElementById(`tab-${tabType}`);
+            if(activeBtn) {
+                activeBtn.className = "tab-btn px-4 py-2 text-xs font-bold rounded-lg bg-uabc-green text-white shadow-sm";
+            }
+
+            filterPrograms();
+        }
+
+        // Update Counts on Load
+        function updateCounts() {
+            document.getElementById('count-ALL').innerText = programData.length;
+            document.getElementById('count-SSC').innerText = programData.filter(i => i.type === 'SSC').length;
+            document.getElementById('count-SSP').innerText = programData.filter(i => i.type === 'SSP').length;
+            document.getElementById('count-PP').innerText = programData.filter(i => i.type === 'PP').length;
+        }
+
+        // Mobile Menu Navigation toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if(mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        // Initialize on Window Load
+        window.onload = function() {
+            updateCounts();
+            filterPrograms();
+        };
+    </script>
+</body>
+</html>
